@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting the number of letters.</title>
+</head>
+<body>
+    <% if(locals.numberOfLetters == 0) {%>
+        <h1>Enter your name broski </h1>
+    <% }else{ %>
+        <h1>Your name has <%= numberOfLetters %> letters! </h1>
+    <% } %>
+    <form action="/submit" method="post">
+        <input type="text" name="fName" placeholder="First name">
+        <input type="text" name="lName" placeholder="Last name">\
+        <input type="submit" value="OK">
+    </form>
+    </body>
+</html>
